@@ -1,9 +1,13 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
-
+function thisAdds(num1, num2) {
+  function add(num1, num2) {
+    return num1 + num2;
+  }
+  return "The product of these numbers is " + add(num1, num2);
+}
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
-
 
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
