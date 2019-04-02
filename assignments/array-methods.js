@@ -2,7 +2,6 @@
 
 // Scroll to the bottom of the list to use some advanced array methods to help the event director gather some information from the businesses.
 const runners = [
-
   {
     id: 1,
     first_name: "Charmain",
