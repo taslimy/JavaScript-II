@@ -1,17 +1,27 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
-function thisAdds(num1, num2) {
-  function add(num1, num2) {
-    return num1 + num2;
-  }
-  return "The product of these numbers is " + add(num1, num2);
+let mySelf = "Taslim";
+function pizza() {
+  return `${mySelf} loves pizza`;
 }
+console.log(pizza());
+
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
   // Return a function that when invoked increments and returns a counter variable.
+  // https://www.w3schools.com/js/js_function_closures.asp
+  let count = 0;
+  return () => {
+    count++;
+    return count;
+  };
 };
+const myCounter2 = counter();
+myCounter2(); //1
+myCounter2(); //2
+myCounter2(); //3
 // Example usage: const newCounter = counter();
 // newCounter(); // 1
 // newCounter(); // 2

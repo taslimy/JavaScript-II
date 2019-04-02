@@ -29,7 +29,7 @@ function getLength(arr, cb) {
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
-  cb(arr.Length - 1);
+  return cb(arr.Length - 1);
 }
 
 function sumNums(x, y, cb) {
